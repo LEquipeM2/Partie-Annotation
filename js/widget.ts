@@ -168,8 +168,9 @@ export function render({ model, el }: RenderContext<WidgetModel>) {
 	});
 
 	wsRegions.on('region-updated', (region): void => {
-		changed_for_python=true;
 		console.log('Updated region', region);
+		
+		changed_for_python=true;
 		model.set("regions", update_regions());
 		model.save_changes();
 		changed_for_python=false;
@@ -281,6 +282,11 @@ export function render({ model, el }: RenderContext<WidgetModel>) {
 			dict.set(content.toUpperCase(), region.color);
 			color_colection.push(region.color);
 		}
+		changed_for_python=true;
+		model.set("regions", update_regions());
+		model.save_changes();
+		changed_for_python=false;
+
 		update();
 	});
 
@@ -590,6 +596,11 @@ export function render({ model, el }: RenderContext<WidgetModel>) {
 			console.log("Nothing happenned");
 		}
 		e.stopPropagation()
+		
+		changed_for_python=true;
+		model.set("regions", update_regions());
+		model.save_changes();
+		changed_for_python=false;
 	});
 
 	// Test btn
