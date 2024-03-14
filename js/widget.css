@@ -1,0 +1,135 @@
+.pyannotebook_reborn-counter-button {
+	background: linear-gradient(
+		300deg,
+		#9933ff 10%,
+		#00ccff 90%
+	);
+	border-radius: 10px;
+	border: 0;
+	color: white;
+	cursor: pointer;
+	font-family: "Roboto", sans-serif;
+	font-size: 2em;
+	margin: 15px;
+	padding: 5px 10px;
+	transition: transform 0.25s ease-in-out;
+}
+
+.pyannotebook_reborn-counter-button:hover {
+	transform: scale(1.05);
+}
+
+#waveform ::part(region){
+	opacity: 80%;
+	top: 10% !important;
+	height: 80% !important;
+}
+
+#waveform ::part(timeline) {
+	top: 0% !important;
+	height: 10% !important;
+}
+
+#waveform ::part(region-active) {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      #ffffff 10px,
+      #ffffff 15px
+    );
+    z-index: 1000 !important;
+}
+
+.wavesurfer-region-tag {
+	padding-left: 4px;
+	padding-top: 4px;
+	opacity: 100%;
+}
+
+.label-button {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-width: 0px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+  
+.label-shortcut {
+	background-color: white;
+	/* margin-top: 5px; */
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-right: 5px;
+}
+  
+.label-button-active {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background: repeating-linear-gradient(
+	  45deg,
+	  transparent,
+	  transparent 10px,
+	  #ffffff 10px,
+	  #ffffff 15px
+	);
+}
+  
+.label-input {
+	background: transparent;
+	border-width: 0px;
+	border-style: solid;
+}
+
+#waveform ::part(overlapping-1-1){
+	top: 10% !important;
+	height: 80% !important;
+}
+  
+#waveform ::part(overlapping-1-2){
+	top: 10% !important;
+	height: 70% !important;
+}
+  
+#waveform ::part(overlapping-2-2){
+	top: 20% !important;
+	height: 70% !important;
+}
+  
+#waveform ::part(overlapping-1-3) {
+	top: 10% !important;
+	height: 60% !important;
+}
+  
+#waveform ::part(overlapping-2-3) {
+	top: 20% !important;
+	height: 60% !important;
+}
+  
+#waveform ::part(overlapping-3-3) {
+	top: 30% !important;
+	height: 60% !important;
+}
+  
+#waveform ::part(overlapping-1-4) {
+	top: 10% !important;
+	height: 50% !important;
+}
+  
+#waveform ::part(overlapping-2-4) {
+	top: 20% !important;
+	height: 50% !important;
+}
+  
+#waveform ::part(overlapping-3-4) {
+	top: 30% !important;
+	height: 50% !important;
+}
+  
+#waveform ::part(overlapping-4-4) {
+	top: 40% !important;
+	height: 50% !important;
+}
